@@ -1,4 +1,4 @@
-Ссылка на хероку.
+Ссылка на хероку:
 https://sneakers-catalog.herokuapp.com/
 
 ## Available Scripts
