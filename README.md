@@ -1,5 +1,5 @@
 Ссылка на хероку:
-https://sneakers-catalog.herokuapp.com/
+https://sneakers-catalog.herokuapp.com/ (Надо подождать чуть дольше чем обычно пока докер контейнер развернется)
 
 ## Available Scripts
 
