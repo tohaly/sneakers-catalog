@@ -1,0 +1,115 @@
+@keyframes upDown {
+  5% {
+    bottom: -20px;
+  }
+  10% {
+    bottom: -15px;
+  }
+  20% {
+    bottom: -20px;
+  }
+  25% {
+    bottom: -15px;
+  }
+}
+
+.filter {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  max-height: 0;
+  transition: max-height 0.4s;
+  justify-content: center;
+}
+
+.filterOpen {
+  max-height: 1000px;
+}
+
+.filterList {
+  margin: 16px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.filterBrandsList {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.filterCheckbox {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.filterTextInput {
+  user-select: none;
+  display: inline-block;
+  transition: all .1s;
+}
+
+.filterCheckboxLabel {
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+  transition: all .4s;
+}
+
+.filterSubtitles {
+  font-size: 16px;
+  text-align: left;
+  margin-top: 0;
+}
+
+.filterSwitchButton {
+  position: absolute;
+  width: 50px;
+  height: 30px;
+  bottom: -15px;
+  left: calc((100% - 25px) / 2);
+  cursor: pointer;
+  animation: upDown 2s infinite;
+}
+
+.filterSwitchButton:before {
+  position: absolute;
+  content: '';
+  width: 27px;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  background-color: #000;
+  transform: rotate(25deg);
+  transition: transform .1s;
+}
+
+.filterSwitchButton:after {
+  position: absolute;
+  content: '';
+  width: 27px;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  background-color: #000;
+  transform: rotate(-25deg);
+}
+
+.filterSwitchButtonClose {
+  animation: none;
+}
+
+.filterSwitchButtonClose:before {
+  transform: rotate(-25deg);
+}
+
+.filterSwitchButtonClose:after {
+  transform: rotate(25deg);
+}
+
+@media screen  and (max-width: 768px) {
+  .filterList {
+    flex-direction: column;
+  }
+}

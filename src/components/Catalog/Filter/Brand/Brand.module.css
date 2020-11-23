@@ -1,0 +1,34 @@
+.brand {
+  display: flex;
+  margin-right: 16px;
+  margin-bottom: 8px;
+  color: #fff;
+  position: relative;
+}
+
+.brand:last-of-type {
+  margin-right: 0;
+}
+
+
+.label {
+  composes: filterCheckboxLabel from "../Filter.module.css"
+}
+
+
+.checkbox {
+  composes: filterCheckbox from "../Filter.module.css"
+}
+
+
+.text {
+  composes: filterTextInput from '../Filter.module.css';
+}
+
+.checkbox:checked + .text {
+  color: #a8a8a8;
+  transform: scale(1.1);
+  border: 1px solid #a8a8a8;
+  border-radius: 6px;
+  padding: 2px;
+}

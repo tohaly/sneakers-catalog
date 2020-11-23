@@ -1,0 +1,51 @@
+.other {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  border-radius: 8px;
+  padding: 16px;
+  color: #fff;
+  margin-right: 16px;
+}
+
+.otherContent {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.otherTitle {
+  font-size: 16px;
+  text-align: left;
+  margin-top: 0;
+}
+
+.otherCheckbox {
+  composes: filterCheckbox from '../Filter.module.css';
+}
+
+.otherText {
+  composes: filterTextInput from '../Filter.module.css';
+}
+
+.otherLabel {
+  composes: filterCheckboxLabel from "../Filter.module.css"
+}
+
+.otherTitle {
+  composes: filterSubtitles from '../Filter.module.css';
+}
+
+.otherCheckbox:checked + .otherText {
+  color: #a8a8a8;
+  transform: scale(1.1);
+  border: 1px solid #a8a8a8;
+  border-radius: 6px;
+  padding: 2px;
+}
+
+@media screen  and (max-width: 768px) {
+  .other {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}

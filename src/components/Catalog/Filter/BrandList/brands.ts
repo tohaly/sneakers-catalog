@@ -1,0 +1,1 @@
+export const brands = ['nike', 'jordan', 'converse', 'adidas', 'new balance', 'reebok', 'puma'];

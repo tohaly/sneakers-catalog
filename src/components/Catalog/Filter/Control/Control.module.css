@@ -1,0 +1,14 @@
+.button {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  font-size: 22px;
+  padding: 6px 32px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.applyFilterButton {
+  composes: button;
+}

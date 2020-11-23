@@ -1,0 +1,30 @@
+import React from 'react';
+import classNames from 'classnames/bind';
+import { BrandList } from "./BrandList/BrandList";
+import { Other } from "./Other";
+import style from './Filter.module.css';
+import { Control } from "./Control";
+import { useDispatch, useSelector } from "react-redux";
+import { IState } from "../../../redux/rootReducer";
+import { openFilter } from "../../../redux/interface/actions";
+
+let cx = classNames.bind(style);
+
+export const Filter = () => {
+  const { filterIsOpen } = useSelector((state: IState) => state.interface);
+  const dispatch = useDispatch();
+
+  return (
+    <div className={ cx('filter', { 'filterOpen': filterIsOpen }) }>
+      <div className={ style.filterList }>
+        <BrandList />
+        <Other />
+        <Control />
+      </div>
+      <div
+        className={ cx('filterSwitchButton', { 'filterSwitchButtonClose': filterIsOpen }) }
+        onClick={ () => dispatch(openFilter()) }
+      />
+    </div>
+  );
+};

@@ -1,0 +1,24 @@
+.brandList {
+  max-width: 630px;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #000;
+  color: #fff;
+  margin-right: 16px;
+}
+
+.brandListContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.brandListTitle {
+  composes: filterSubtitles from '../Filter.module.css';
+}
+
+@media screen  and (max-width: 768px) {
+  .brandList {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}

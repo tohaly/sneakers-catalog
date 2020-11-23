@@ -1,0 +1,11 @@
+.about {
+  min-height: 60vh;
+  display: flex;
+}
+
+.text {
+  color: #000;
+  margin: auto;
+  font-size: 40px;
+  text-align: center;
+}

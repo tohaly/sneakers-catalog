@@ -1,0 +1,10 @@
+.sneakerList {
+  padding: 60px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 260px));
+  justify-content: center;
+  grid-gap: 16px;
+  margin: 0 auto;
+}
+

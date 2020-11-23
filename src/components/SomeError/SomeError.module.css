@@ -1,0 +1,10 @@
+.error {
+  display: flex;
+  min-height: 60vh;
+}
+
+.title {
+  font-family: 'Roboto', sans-serif, arial;
+  font-size: 60px;
+  margin: auto;
+}

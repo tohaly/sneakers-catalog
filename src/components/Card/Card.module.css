@@ -1,0 +1,45 @@
+.card {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  border-radius: 32px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.card:hover {
+  box-shadow: 0 1px 17px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  max-width: 100%;
+  margin-bottom: 8px;
+}
+
+.title {
+  text-align: left;
+  font-size: 16px;
+  font-family: 'Helvetica Neue', serif, arial, sans-serif;
+  font-weight: 600;
+  color: #000;
+  margin: 0 0 8px;
+}
+
+.brand {
+  font-family: 'Roboto', serif, arial, sans-serif;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-weight: 600;
+  transform: rotate(25deg);
+  color: #8d8d8e;
+}
+
+.price {
+  font-family: 'Roboto', serif, arial, sans-serif;
+  font-size: 14px;
+  color: #8d8d8e;
+  margin: 0;
+  text-align: left;
+}
