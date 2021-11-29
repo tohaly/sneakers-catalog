@@ -1,0 +1,23 @@
+@keyframes showImg {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.loaderWrapper {
+  width: 100%;
+  display: flex;
+}
+
+.loader {
+  width: 80px;
+  object-fit: contain;
+  margin: auto;
+}
+
+.image {
+  animation: showImg 0.4s;
+}

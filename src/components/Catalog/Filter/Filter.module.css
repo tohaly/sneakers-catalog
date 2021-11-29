@@ -14,22 +14,30 @@
 }
 
 .filter {
+  width: 100%;
+  background-color: #f5f5f7;
   display: flex;
   align-items: flex-end;
-  position: relative;
-  max-height: 0;
-  transition: max-height 0.4s;
+  position: sticky;
+  top: 0;
   justify-content: center;
+  z-index: 10;
+  box-sizing: border-box;
 }
 
-.filterOpen {
+.filterOpen .filterList {
   max-height: 1000px;
 }
 
+
+
 .filterList {
-  margin: 16px;
+  max-height: 0;
   display: flex;
   justify-content: flex-start;
+  transition: max-height 0.4s;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .filterBrandsList {
@@ -48,6 +56,9 @@
   user-select: none;
   display: inline-block;
   transition: all .1s;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 2px;
 }
 
 .filterCheckboxLabel {

@@ -2,6 +2,7 @@ import React from 'react';
 import { ISneakers } from "../../service/api/sneakersApi";
 import defaultImage from '../../images/default.jpg';
 import style from './Card.module.css';
+import {AppImage} from "../AppImage/AppImage";
 
 
 export const Card = (props: (ISneakers)) => {
@@ -9,11 +10,12 @@ export const Card = (props: (ISneakers)) => {
 
   return (
     <div className={ style.card }>
-      <img
-        src={ media.imageUrl || defaultImage }
-        alt="Sneaker"
-        className={ style.image }
-      />
+      {/*<img*/}
+      {/*  src={ media.imageUrl || defaultImage }*/}
+      {/*  alt="Sneaker"*/}
+      {/*  className={ style.image }*/}
+      {/*/>*/}
+      <AppImage src={media.imageUrl || defaultImage} className={style.image} classNameLoaderWrapper={style.loader} />
       <h2 className={ style.title }>
         { title }
       </h2>

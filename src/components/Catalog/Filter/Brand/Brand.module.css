@@ -17,18 +17,18 @@
 
 
 .checkbox {
-  composes: filterCheckbox from "../Filter.module.css"
+  composes: filterCheckbox from "../Filter.module.css";
 }
 
 
 .text {
   composes: filterTextInput from '../Filter.module.css';
+
+
 }
 
 .checkbox:checked + .text {
   color: #a8a8a8;
   transform: scale(1.1);
-  border: 1px solid #a8a8a8;
-  border-radius: 6px;
-  padding: 2px;
+  border-color: #a8a8a8;
 }

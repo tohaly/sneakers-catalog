@@ -12,8 +12,14 @@
   color: #fff;
   outline: none;
   text-decoration: none;
+  margin-bottom: 32px;
+  transition: opacity 0.2s ease-in-out;
 }
 
 .moreButton:hover {
   opacity: 0.8;
+}
+
+.moreButton:active {
+  transform: scale(1.01);
 }

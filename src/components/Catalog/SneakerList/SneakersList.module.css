@@ -8,3 +8,15 @@
   margin: 0 auto;
 }
 
+.button {
+  cursor: pointer;
+  background-color: #000;
+  padding: 16px 32px;
+  border-radius: 16px;
+  color: #fff;
+  outline: none;
+  text-decoration: none;
+  margin-bottom: 32px;
+  transition: opacity 0.2s ease-in-out;
+  border: none;
+}
