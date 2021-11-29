@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react';
+import React from 'react';
 import classNames from 'classnames/bind';
 import { BrandList } from "./BrandList/BrandList";
 import { Other } from "./Other";
@@ -7,7 +7,6 @@ import { Control } from "./Control";
 import { useDispatch, useSelector } from "react-redux";
 import { IState } from "../../../redux/rootReducer";
 import { openFilter } from "../../../redux/interface/actions";
-import {useScrollPosition} from "../../../utils/useScroll";
 
 let cx = classNames.bind(style);
 

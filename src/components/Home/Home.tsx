@@ -7,7 +7,7 @@ export const Home = () => {
   return (
     <div className={ style.home }>
       <Favorites />
-      <NavLink className={ style.moreButton } to='/catalog'>More</NavLink>
+      <NavLink className={ style.moreButton } to='/catalog'>sGo to Catalog</NavLink>
     </div>
   );
 };
